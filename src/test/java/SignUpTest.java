@@ -4,9 +4,10 @@ import org.junit.Test;
 public class SignUpTest extends BaseTest {
 
     @Test
-    public void mainPage() {
+    public void signUp() {
         navigation.openMainPage();
         homePage
+                .closePopUp()
                 .clickSignInButton()
                 .clickCreateAnAccountBtn()
                 .fillAllInputs()
